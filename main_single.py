@@ -80,6 +80,7 @@ def train(model, loader, optimizer, counter, args, writer=None):
 
 
 def main(args):
+    # 결과를 어느정도까지 일정하게 나오게 할 것인가? 이런 느낌인듯
     if args.deterministic >= 1:
         torch.manual_seed(args.seed)
         torch.cuda.manual_seed(args.seed)
